@@ -10,7 +10,7 @@
 <template>
     <!-- Ogetto -->
     <section>
-        <h1>Test Test</h1>
+        <h1>DEBUG</h1>
     </section>
 </template>
 
