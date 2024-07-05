@@ -1,12 +1,12 @@
-<script setup>
-// Import component Header
-import AppHeader from './components/AppHeader.vue'
-
-// Import component Main
-import AppMain from './components/AppMain.vue'
-
-// Import component Footer
-import AppFooter from './components/AppFooter.vue'
+<script>
+  export default {
+    name: 'App',
+    components: {
+      AppHeader,
+      AppMain,
+      AppFooter
+    }
+  }
 </script>
 
 <template>

@@ -8,7 +8,11 @@
 <!-- HTML del componente Main -->
 <template>
     <!-- Ogetto -->
+
+    <!-- Content goes here -->
     <section>
-        <h3>DEBUG MAIN</h3>
+        
     </section>
+
+    <!-- Cards/ Icons -->
 </template>
