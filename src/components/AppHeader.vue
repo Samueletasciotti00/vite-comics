@@ -16,7 +16,7 @@
 
             <!-- Logo -->
             <div>
-                <span>D C</span>
+                <span><img src="/Users/samussl/Desktop/documenti/boolean/esercitazioni/luglio/vite-comics/public/vue-dc-comics-1/img/dc-logo.png" alt=""></span>
             </div>
 
             <!-- Lista opzioni -->
@@ -41,6 +41,9 @@
 <!-- Stile Sass del componente specifico -->
 <style lang="scss" scoped>
     #head_container{
+        height: 10vh;
+
+        // flex
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -55,6 +58,12 @@
         ul li {
             list-style: none;
             margin: 10px;
+        }
+    }
+
+    span{
+        img{
+            width: 50%;
         }
     }
 </style>

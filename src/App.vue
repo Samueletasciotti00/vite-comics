@@ -1,10 +1,24 @@
 <script>
-  export default {
+// Import component Header
+import AppHeader from './components/AppHeader.vue'
+
+// Import component Content
+import AppContent from './components/AppContent.vue'
+
+// Import component Cards
+import AppCards from './components/AppCards.vue'
+
+// Import component Footer
+import AppFooter from './components/AppFooter.vue'
+
+
+export default {
     name: 'App',
     components: {
       AppHeader,
-      AppMain,
-      AppFooter
+      AppContent,
+      AppFooter,
+      AppCards
     }
   }
 </script>
@@ -13,8 +27,11 @@
     <!-- Componente di prova per Header di pagina -->
     <AppHeader />  
 
-    <!-- Componente di prova per Main di pagina -->
-    <AppMain />
+    <!-- Componente di prova per Content di pagina -->
+    <AppContent />
+
+    <!-- Componente di prova per Cards di pagina -->
+    <AppCards />
 
     <!-- Componente di prova per Footer di pagina -->
     <AppFooter />
