@@ -1,8 +1,31 @@
 <script>
-    
 
     export default {
-        name: 'AppCards'
+        name: 'AppCards',
+        data() {
+            return{
+                // Immagini delle cards
+                cards: [
+                    // 'public/vue-dc-comics-1/img/buy-comics-shop-locator.png','public/vue-dc-comics-1/img/buy-comics-subscriptions.png'
+                    {
+                        immage: 'public/vue-dc-comics-1/img/buy-comics-digital-comics.png',
+                        name: 'DIGITAL COMICS'
+                    },
+                    {
+                        immage: 'public/vue-dc-comics-1/img/buy-comics-merchandise.png',
+                        name: 'DC MERCHANDISE'
+                    },
+                    {
+                        immage: 'public/vue-dc-comics-1/img/buy-comics-subscriptions.png',
+                        name: 'SUBSCRIPTION'
+                    },
+                    {
+                        immage: 'public/vue-dc-comics-1/img/buy-comics-shop-locator.png',
+                        name: 'COMIC SHOP LOCATOR'
+                    },
+                ]
+            }
+        }
     };
 </script>
 
@@ -12,24 +35,8 @@
     <!-- Content goes here -->
     <section>
         <ul>
-            <li>
-                <img src="/Users/samussl/Desktop/documenti/boolean/esercitazioni/luglio/vite-comics/public/vue-dc-comics-1/img/buy-comics-digital-comics.png" alt=""> <span>DIGITAL COMICS</span>
-            </li>
-
-            <li>
-                <img src="" alt=""> <span>debug</span>
-            </li>
-
-            <li>
-                <img src="" alt=""> <span>debug</span>
-            </li>
-
-            <li>
-                <img src="" alt=""> <span>debug</span>
-            </li>
-
-            <li>
-                <img src="" alt=""> <span>debug</span>
+            <li v-for="(card,index) in cards" :key="index">
+                <img :src="card.immage" alt=""> <span>{{ cards[index].name }}</span>
             </li>
         </ul>
     </section>
@@ -43,7 +50,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-
+        span{
+            font-size: 12px;
+        }
 
     ul{
         list-style: none;
@@ -52,10 +61,11 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        gap: 10%;
     }
     ul li img{
         // width: 25%;
-        width: 60px;
+        width: 40px;
        
     }
 
