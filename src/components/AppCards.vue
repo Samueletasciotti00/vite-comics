@@ -40,19 +40,22 @@
     section{
         height: 20vh;
         background-color: #0282f9;
-        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
 
     ul{
         list-style: none;
 
-        // flex
+        // // flex
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    li img{
-        width: 25%;
+    ul li img{
+        // width: 25%;
+        width: 60px;
        
     }
 
