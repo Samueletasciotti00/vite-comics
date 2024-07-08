@@ -26,7 +26,7 @@ export default {
 <template>
     <!-- Componente di prova per Header di pagina -->
     <AppHeader />  
-
+  
     <!-- Componente di prova per Content di pagina -->
     <AppContent />
 

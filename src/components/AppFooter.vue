@@ -135,9 +135,11 @@
 
         // Formattazione generali di sezione
         padding: 20px;
-        background-image: url('/Users/samussl/Desktop/documenti/boolean/esercitazioni/luglio/vite-comics/public/vue-dc-comics-1/img/footer-bg.jpg'),url('public/vue-dc-comics-1/img/dc-logo-bg.png');
-        background-position:  left bottom, left top;
-        background-repeat: repeat, no-repeat;
+        background-image: url('public/vue-dc-comics-1/img/dc-logo-bg.png'),url('/Users/samussl/Desktop/documenti/boolean/esercitazioni/luglio/vite-comics/public/vue-dc-comics-1/img/footer-bg.jpg');
+        background-size: 30%, cover;
+        background-position-x:  75%;
+        background-position-y: center;
+        background-repeat: no-repeat;
  
 
         h4{
